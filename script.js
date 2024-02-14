@@ -55,4 +55,5 @@ function renderEvensts(){
                       <p>${element.description}</p>`
     return div
   })
+  eventsContainer.replaceChildren(...htmlEvents)
 }
