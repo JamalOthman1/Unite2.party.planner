@@ -1,17 +1,20 @@
-/*
-    SETUP
- 1. References to different useful things
- 2. State
-*/
+// ------- State --------
 
 const BASE_URL = 'https://fsa-crud-2aa9294fe819.herokuapp.com/api/brittany-dugger/events'
 
 let events = []
-
 const eventsContainer = document.getElementById('events')
 
-//  FETCH CALLS
 
+
+// ------- references ----------
+
+
+
+
+
+
+// --------- FETCH CALLS --------
 async function getEvents(){
   try{
     const response = await fetch(`${BASE_URL}`)
@@ -30,20 +33,16 @@ async function getEvents(){
 
 
 
-/*
-  EVENT LISTENERS (click submit etc.)
-*/
+
+
+// ------EVENT LISTENERS ---------
 
 
 
 
 
-/*
-  RENDER FUNCTIONS
+// ------ RENDER ---------
 
-  renderRecipes() - what we call when GET/POST/PUT/DELETE 
-      runs to re-render to the DOM
-*/
 
 function renderEvensts(){
   const htmlEvents =events.map(element => {
